@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Teachscape Diner"
+	,	"id": "10001"
+	,	"hours" : {
+			"open": "08:00",
+			"close": "23:00"
+		}
+	// TODO: what if reservation hours are not same as walk-in hours?
+	,	"sameDay": true
+	}
+,	{
+		"name": "Scape de Enseigner"
+	,	"id": "20103"
+	}
+,	{
+		"name": "Eatscape 24"
+	,	"id": "23412"
+	}
+]

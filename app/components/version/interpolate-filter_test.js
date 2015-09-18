@@ -1,7 +1,7 @@
 'use strict';
 
-describe('myApp.version module', function() {
-  beforeEach(module('myApp.version'));
+describe('com.teachscape.coding.version module', function() {
+  beforeEach(module('com.teachscape.coding.version'));
 
   describe('interpolate filter', function() {
     beforeEach(module(function($provide) {

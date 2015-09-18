@@ -1,12 +1,13 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('com.teachscape.coding', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'com.teachscape.coding.restaurants',
+  'com.teachscape.coding.reservation',
+  // 'com.teachscape.coding.confirmation',
+  // 'com.teachscape.coding.error'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/restaurants'});
 }]);
