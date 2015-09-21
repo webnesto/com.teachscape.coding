@@ -1,4 +1,4 @@
-# Coding example for Teachscape (fork of com.teachscape.coding )
+# Coding example for Teachscape (fork of angular-seed )
 
 A web application that allows a user to create a reservation for a meal at a restaurant.
 
