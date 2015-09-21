@@ -11,7 +11,7 @@
 				"open": "08:00",
 				"close": "23:00"
 			},
-			"banner": "images/desert.jpg"
+			"background": "images/desert.jpg"
 		},
 		{
 			"name": "Scape de Enseigner",
@@ -20,7 +20,7 @@
 				"open": "14:00",
 				"close": "21:00"
 			},
-			"banner": "images/outdoor.jpg"
+			"background": "images/outdoor.jpg"
 		},
 		{
 			"name": "Eatscape 24",
@@ -29,7 +29,7 @@
 				"open": "00:00",
 				"close": "24:00"
 			},
-			"banner": "images/beef.jpg"
+			"background": "images/beef.jpg"
 		}
 	]
 }

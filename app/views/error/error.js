@@ -13,11 +13,13 @@ angular.module('com.teachscape.coding.error', ['ngRoute'])
 	'$scope', 
 	'$routeParams', 
 	'$location',
+	'$window',
 	'errorModel',
 	function( 
 		$scope, 
 		$routeParams, 
 		$location,
+		$window,
 		errorModel
 	) {
 		var errorMsg = errorModel.get();
@@ -28,5 +30,9 @@ angular.module('com.teachscape.coding.error', ['ngRoute'])
 		else {
 			$scope.error = errorMsg;
 		}
+
+		$scope.goback = function(){
+			$window.history.back();
+		};
 	}
 ]);

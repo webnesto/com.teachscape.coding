@@ -1,11 +1,14 @@
 # Coding example for Teachscape (fork of com.teachscape.coding )
 
 A web application that allows a user to create a reservation for a meal at a restaurant.
+
 ###Requirements:
 - App must allow user to select restaurant
 - App must allow user to select date and time
 - App must provide user feedback if requested date and time are not available
 - App must provide user feedback if reservation is successful showing time, restaurant name, party size, and confirmation number
+
+![flow](https://raw.githubusercontent.com/webnesto/com.teachscape.coding/master/resources/flow.png)
 
 ###Assumptions:
 - Tested desktop browsers for initial release are: IE 11, Chrome 45.0.x, FF 40.0.x, Safari 8.0.x
@@ -95,13 +98,9 @@ Now browse to the app at `http://localhost:8000/app/index.html`.
 app/                    --> all of the source files for the application
   app.css               --> default stylesheet
   components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
+    filter_date.js        --> filter for rendering UTC as MM/DD/YYYY
+    filter_hours.js       --> filter for rendering 24hour time as 12hr w/ am/pm
+    filter_people.js      --> filter to render a string "1 person"/"# people"
   data/                 --> static JSON files (TODO: replaced service)
     restaurants.json      --> array of restaurants w/ restaurant info
   fonts/*               --> webfont files
