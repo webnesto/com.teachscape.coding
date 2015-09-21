@@ -1,0 +1,9 @@
+<div id="restaurants">
+	<div ng-if="loading">LOADING</div>
+	<div ng-if="!loading" class="animate-if">
+		<p>Please select a restaurant</p>
+		<ul ng-repeat="restaurant in restaurants">
+			<li><input type="button" value="{{restaurant.name}}" ng-click="selectRestaurant( restaurant.id )" /></li>
+		</ul>
+	</div>
+</div>

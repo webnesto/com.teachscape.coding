@@ -7,9 +7,11 @@
   "private": true,
   "dependencies": {
     "angular": "1.2.x",
-    "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.x",
-    "html5-boilerplate": "~4.3.0"
+    "angular-route": "1.2.x",
+    "angular-ui-date": "0.0.8",
+    "html5-boilerplate": "~4.3.0",
+    "less": "2.5.1"
   }
 }

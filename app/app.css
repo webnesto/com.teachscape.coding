@@ -1,54 +1,88 @@
 /* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+/* Global */
+@font-face {
+  font-family: '20_dbregular';
+  src: url('fonts/20-db/20db-webfont.eot');
+  src: url('fonts/20-db/20db-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/20-db/20db-webfont.woff2') format('woff2'), url('fonts/20-db/20db-webfont.woff') format('woff'), url('fonts/20-db/20db-webfont.ttf') format('truetype'), url('fonts/20-db/20db-webfont.svg#20_dbregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
-.menu:before {
-  content: "[";
+html,
+body {
+  background-color: #dbd1c8;
+  font-family: "Helvetica", "Arial", "san-serif";
 }
-
-.menu:after {
-  content: "]";
+h1 {
+  font-family: '20_dbregular', san-serif;
+  color: #5f2210;
 }
-
-.menu > li {
-  display: inline;
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
 }
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
+ul {
   padding: 0;
 }
-
-
-/* Global */
-.animate-if {
-  background:white;
-  border:1px solid black;
-  padding:10px;
+li {
+  list-style: none;
+  margin-left: 0;
 }
-
-.animate-if.ng-enter, .animate-if.ng-leave {
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+input[type=button],
+input[type=submit],
+input[type=text],
+input[type=number],
+select {
+  height: 2em;
+  padding: 0 1em;
+  border: 1px solid #5b5a5c;
+  border-radius: 1em;
+  background-color: #5f2210;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 0 .25em 0;
 }
-
-.animate-if.ng-enter,
-.animate-if.ng-leave.ng-leave-active {
-  opacity:1;
+input[type=button],
+input[type=submit],
+input[type=text],
+input[type=number] {
+  padding: 0 1em;
 }
-
-.animate-if.ng-leave,
-.animate-if.ng-enter.ng-enter-active {
-  opacity:0;
+select {
+  margin-left: 1em;
 }
-
+#wrapper {
+  max-width: 500px;
+  margin: 3em auto;
+  border: 1px solid #5b5a5c;
+  border-radius: 2em;
+  padding: 2em;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  #wrapper {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 100%;
+  }
+}
 /* Restaurants */
+#restaurants input[type=button] {
+  font-family: '20_dbregular';
+}
+/* Reservation */
+#reservation .hours {
+  font-style: italic;
+}
+#reservation input[type=button],
+#reservation input[type=submit],
+#reservation input[type=text],
+#reservation input[type=number],
+#reservation select {
+  min-width: 100px;
+  max-width: 200px;
+  width: 100%;
+}

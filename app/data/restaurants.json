@@ -1,20 +1,35 @@
-[
-	{
-		"name": "Teachscape Diner"
-	,	"id": "10001"
-	,	"hours" : {
-			"open": "08:00",
-			"close": "23:00"
+{
+	"TODO": [
+		"what if reservation hours are not same as walk-in hours?",
+		"what if hours are different on different days?"
+	],
+	"restaurants": [
+		{
+			"name": "Teachscape Diner",
+			"id": "10001",
+			"hours" : {
+				"open": "08:00",
+				"close": "23:00"
+			},
+			"banner": "images/desert.jpg"
+		},
+		{
+			"name": "Scape de Enseigner",
+			"id": "20103",
+			"hours" : {
+				"open": "14:00",
+				"close": "21:00"
+			},
+			"banner": "images/outdoor.jpg"
+		},
+		{
+			"name": "Eatscape 24",
+			"id": "23412",
+			"hours" : {
+				"open": "00:00",
+				"close": "24:00"
+			},
+			"banner": "images/beef.jpg"
 		}
-	// TODO: what if reservation hours are not same as walk-in hours?
-	,	"sameDay": true
-	}
-,	{
-		"name": "Scape de Enseigner"
-	,	"id": "20103"
-	}
-,	{
-		"name": "Eatscape 24"
-	,	"id": "23412"
-	}
-]
+	]
+}

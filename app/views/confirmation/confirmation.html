@@ -1,0 +1,5 @@
+<div id="success">
+	<h1>Success!</h1>
+	<p>Your reservation at {{reservationModel.name}}, on <strong>{{ reservationModel.date | date }} at {{reservationModel.time | hours}} for {{reservationModel.number | people}}</strong>, has been made.</p>
+	<p>Your confirmation number is <strong>#{{reservationModel.conf_number}}</strong>, please present this number upon arrival.</p>
+</div>

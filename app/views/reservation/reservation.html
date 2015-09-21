@@ -1,0 +1,19 @@
+<div id="reservation">
+	<h1>Make reservation</h1>
+	<h2>{{name}}</h2>
+	<div class="hours">Hours of operation
+		<div class="open">Open: {{hours.open | hours}}</div>
+		<div class="close">Close: {{hours.close | hours}}</div>
+		<div class="days"></div>
+	</div>
+	<form novalidate name="reservation_form">
+		<input title="date of reservation" type="text" placeholder="date" name="date" ui-date ng-model="reservationModel.date" required><br />
+		<select title="time of reservation" name="time" ng-model="reservationModel.time" required>
+			<option value="" class="placeholder">time</option>
+			<option ng-repeat="hour in availablehours" value="{{hour+':00'}}">{{ hour+":00" | hours}}</option>
+		</select><br />
+		<input title="number of party members" placeholder="#" name="number" type="number" min="1" max="4" ng-model="reservationModel.number" required>*<br />
+		<sub ng-if="reservation_form.number.$invalid">* Please call restaurant for parties greater than 4</sub><br />
+		<input value="Reserve!" title="click to make reservation" ng-hide="reservation_form.$invalid"  type="submit" ng-click="reserve()" />
+	</form>
+</div>
